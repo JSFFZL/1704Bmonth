@@ -1,0 +1,47 @@
+@import "reset";
+@import "px2rem";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: px2rem(375px);
+    height: 100%;
+}
+
+// 头部内容样式
+.header {
+    width: px2rem(375px);
+    height: px2rem(80px);
+
+    .nav {
+        width: px2rem(375px);
+        overflow-x:auto; 
+        ul {
+            display: flex;
+            li {
+                flex-shrink: 0;
+                padding:  px2rem(10px);
+                font-size: px2rem(16px);
+            }
+        }
+        .active{
+            border-bottom: solid px2rem(2px) red;
+        }
+    }
+}
+
+// 身体部内容样式
+.main-conter {
+    flex: 1;
+    width: px2rem(375px);
+    overflow: auto;
+    background: orange;
+}
+
+
+
+// 尾部内容样式
+.footer {
+    width: px2rem(375px);
+    height: px2rem(50px);
+}
